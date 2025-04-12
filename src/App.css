@@ -1,0 +1,96 @@
+/* Background and body layout */
+body {
+  background: linear-gradient(to right, #3b82f6, #6366f1, #8b5cf6);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container replacing: container mx-auto p-6 max-w-lg bg-white text-gray-800 rounded-lg shadow-lg */
+.container {
+  background-color: white;
+  color: #1f2937;
+  padding: 24px;
+  max-width: 640px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 2rem;
+}
+
+/* Input + Button section spacing */
+.space-y-4 > * + * {
+  margin-top: 1rem;
+}
+
+/* Input field */
+input[type="text"] {
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 1rem;
+}
+
+/* Buttons */
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  width: 100%;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:nth-of-type(1) {
+  background-color: #6366f1;
+  color: white;
+}
+
+button:nth-of-type(2) {
+  background-color: #3b82f6;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Recent dropdown */
+select {
+  padding: 0.5rem;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 1rem;
+}
+
+/* Weather box */
+.weather-box {
+  background-color: #f3f4f6;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Forecast card */
+.forecast-card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Responsive forecast grid */
+.forecast-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 1rem;
+}
